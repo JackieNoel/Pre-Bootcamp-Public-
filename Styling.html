@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {background: skyblue;}
+</style>
+
+<h1 style="color: palevioletred;"> Welcome to my button page!</h1>
+
+<body>
+	<button style="background: orchid; font-size: 45px; color: crimson;" 
+	id ='demo' onclick='myFunction()'>Click Me!</button>
+
+<script>
+	function myFunction(){
+		document.getElementById('demo').style.color = 'yellow';
+	}
+</script>
+
+<br/>
+	<button style="background: olive; font-size: 45px; color: salmon;" 
+	id = 'demo' onclick="bert()">Click for self love!</button>
+
+<body>
+
+<script>
+	function bert(){
+		var a = 'You are beautiful!';
+		document.write(a);
+	}
+</script>
+
+<br/>
+
+<h1 onclick="theFunction(this, 'orange')">Click to change my color.</h1>
+
+<script>
+	function theFunction(element, color){
+		element.style.color = color;
+	}
+
+
+
+	document.getElementById('myBtn').onclick = function() {myFunction()};
+
+	function myFunction(){
+		document.getElementById('myDropdown').classList.toggle('show');
+	}
+</script>
+
+
+
+</body>
+</html>
